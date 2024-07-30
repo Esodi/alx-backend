@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 ''' flask using module '''
 
 from flask import render_template, Flask
