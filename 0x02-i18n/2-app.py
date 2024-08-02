@@ -6,7 +6,7 @@ from flask import Flask, request, render_template
 from flask_babel import Babel
 
 
-app =   Flask(__name__)
+app = Flask(__name__)
 babel = Babel(app)
 
 
@@ -18,6 +18,7 @@ def get_locale():
 
 @app.route('/', strict_slashes=False)
 def index():
+    ''' index function '''
     return render_template('2-index.html')
 
 
