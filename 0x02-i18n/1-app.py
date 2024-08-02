@@ -24,6 +24,7 @@ babel.init_app(app)
 
 @app.route('/', strict_slashes=False)
 def index():
+    ''' the main function '''
     return render_template('1-index.html')
 
 
