@@ -21,5 +21,11 @@ app.config.from_object(Config)
 
 babel.init_app(app)
 
+
+@app.route('/', strict_slashes=False)
+def index():
+    return render_template('1-index.html')
+
+
 if __name__ == "__main__":
     app.run()
