@@ -10,11 +10,13 @@ from base_caching import BaseCaching
 class BasicCache(BaseCaching):
     '''the class itself '''
     def put(self, key, item):
+        '''put method'''
         if key and item:
             self.cache_data[key] = item
         return self.cache_data
 
     def get(self, key):
+        '''get method'''
         try:
             return self.cache_data[key]
         except KeyError:
