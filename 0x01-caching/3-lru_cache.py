@@ -8,6 +8,7 @@ from collections import OrderedDict
 from base_caching import BaseCaching  # Assuming BaseCaching is provided in base_caching module
 
 class LRUCache(BaseCaching):
+    ''' class itself '''
     def __init__(self):
         super().__init__()
         self.cache_data = OrderedDict()  # Use an OrderedDict to maintain the order of insertion
