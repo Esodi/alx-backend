@@ -24,7 +24,6 @@ class LIFOCache(BaseCaching):
                 del self.cache_data[k]
             self.cache_data[key] = item
 
-
     def get(self, key):
         ''' get method '''
         try:
